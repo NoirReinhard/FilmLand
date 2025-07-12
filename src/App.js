@@ -5,23 +5,23 @@ import MovieCard from "./MovieCard.jsx";
 
 // 4dac2021 MjPsS24.
 
-const API_KEY = "http://www.omdbapi.com?apikey=b6003d8a";
+const API_KEY = "https://www.omdbapi.com?apikey=b6003d8a";
 
-const movie1 = {
-  Title: "Batman: The Animated Series",
-  Year: "1992–1995",
-  imdbID: "tt0103359",
-  Type: "series",
-  Poster:
-    "https://m.media-amazon.com/images/M/MV5BZmVkNDc3YjQtZDMzOS00MTNjLTljNzUtZDhjYWQxMmVlNjE5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg",
-};
+// const movie1 = {
+//   Title: "Batman: The Animated Series",
+//   Year: "1992–1995",
+//   imdbID: "tt0103359",
+//   Type: "series",
+//   Poster:
+//     "https://m.media-amazon.com/images/M/MV5BZmVkNDc3YjQtZDMzOS00MTNjLTljNzUtZDhjYWQxMmVlNjE5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg",
+// };
 const App = () => {
   const [movies, setMovies] = useState([]);
 
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("re zero");
   }, []);
 
   const searchMovies = async (title) => {
